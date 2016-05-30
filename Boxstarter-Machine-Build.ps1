@@ -75,6 +75,7 @@ choco install adobe-creative-cloud -y
 choco install keepass -y
 choco install visualstudiocode -y
 choco install webpi -y
+choco install slack -y
 
 #Not on Choco
 # * Cisco VPN
