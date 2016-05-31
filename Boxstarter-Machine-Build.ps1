@@ -58,6 +58,10 @@ cinst fiddler4 -y
 cinst notepadplusplus -y
 cinst nodejs.install -y
 choco install gitextensions -y
+choco install docker -y
+choco install visualstudio2015enterprise -y
+choco install webpi -y
+choco install resharper-platform -y
 
 #Other essential tools
 cinst winrar -y
@@ -66,21 +70,14 @@ cinst skype -y
 cinst dropbox -y
 cinst windirstat -y
 cinst virtualbox -y
-#cinst genymotion -y # use Xamarin player instead?
 choco install jdk8 -y
-#choco install maven -y # This package installs into C:/bin which is too annoying 
-choco install join.me -y
-choco install clover -y # windows explorer tabs
 choco install adobe-creative-cloud -y
 choco install keepass -y
 choco install visualstudiocode -y
-choco install webpi -y
+choco install wireshark -y
 choco install slack -y
-
-#Not on Choco
-# * Cisco VPN
-# * Egnyte desktop sync
-# * Axure
+choco install silverlight -y
+choco install windows-sdk-10.0 -y
 
 cinst Microsoft-Hyper-V-All -source windowsFeatures
 cinst IIS-WebServerRole -source windowsfeatures
