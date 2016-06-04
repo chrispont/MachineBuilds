@@ -64,6 +64,7 @@ choco install visualstudio2015enterprise -y
 choco install webpi -y
 choco install resharper-platform -y
 choco install ilmerge -y
+choco install eazfuscator.net -y
 
 #Other essential tools
 cinst winrar -y
