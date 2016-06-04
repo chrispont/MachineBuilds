@@ -58,6 +58,7 @@ cinst fiddler4 -y
 cinst notepadplusplus -y
 cinst nodejs.install -y
 choco install gitextensions -y
+choco install kdiff3 -y
 choco install docker -y
 choco install visualstudio2015enterprise -y
 choco install webpi -y
