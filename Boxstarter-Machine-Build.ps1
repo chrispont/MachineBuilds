@@ -63,6 +63,7 @@ choco install docker -y
 choco install visualstudio2015enterprise -y
 choco install webpi -y
 choco install resharper-platform -y
+choco install ilmerge -y
 
 #Other essential tools
 cinst winrar -y
