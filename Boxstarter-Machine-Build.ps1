@@ -82,6 +82,7 @@ choco install slack -y
 choco install silverlight -y
 choco install windows-sdk-10.0 -y
 choco install filezilla -y
+choco install realvnc -y
 
 cinst Microsoft-Hyper-V-All -source windowsFeatures
 cinst IIS-WebServerRole -source windowsfeatures
