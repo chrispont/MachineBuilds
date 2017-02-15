@@ -35,18 +35,6 @@ powercfg -change -disk-timeout-ac 0
 powercfg -change -disk-timeout-dc 30
 powercfg -change -hibernate-timeout-ac 0
 
-## When docked - Make sure that when I close the lid of my laptop it doesn't go to sleep
-
-# retrieve the current power mode Guid
-$guid = (Get-WmiObject -Class win32_powerplan -Namespace root\cimv2\power -Filter "isActive='true'").InstanceID.tostring() 
-$regex = [regex]"{(.*?)}$" 
-$guidVal = $regex.Match($guid).groups[1].value #$regex.Match($guid) 
-# Write-Host $guidVal
-# Set close the lid power option to 'Do Nothing' for plugged in.
-powercfg -SETACVALUEINDEX $guidVal 4f971e89-eebd-4455-a8de-9e59040e7347 5ca83367-6e45-459f-a27b-476b1d01c936 0
-#To see what other options are available - run the following:
-# powercfg -Q $guidVal
-
 ################################# SOFTWARE #######################################
 
 #Browsers
@@ -55,7 +43,6 @@ cinst firefox -y
 
 #Other dev tools
 cinst fiddler4 -y
-cinst notepadplusplus -y
 cinst nodejs.install -y
 choco install gitextensions -y
 choco install kdiff3 -y
