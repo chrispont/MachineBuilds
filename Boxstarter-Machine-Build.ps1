@@ -47,7 +47,13 @@ cinst nodejs.install -y
 choco install gitextensions -y
 choco install kdiff3 -y
 choco install docker -y
-choco install visualstudio2015enterprise -y
+choco install dotnet-4.6.2 -y
+choco install visualstudio2017enterprise -y
+choco install visualstudio2017-workload-azure -y
+choco install visualstudio2017-workload-manageddesktop -y
+choco install visualstudio2017-workload-netcoretools -y
+choco install visualstudio2017-workload-netweb -y
+
 choco install webpi -y
 choco install resharper-platform -y
 choco install ilmerge -y
