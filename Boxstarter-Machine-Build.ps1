@@ -3,11 +3,6 @@ $Boxstarter.RebootOk=$true # Allow reboots?
 $Boxstarter.NoPassword=$false # Is this a machine with no login password?
 $Boxstarter.AutoLogin=$true # Save my password securely and auto-login after a reboot
 
-#### .NET 3.5 ####
-
-cinst dotnet3.5 -y # Not automatically installed. Includes .NET 2.0. Uses Windows Features to install.
-if (Test-PendingReboot) { Invoke-Reboot }
-
 #### WINDOWS SETTTINGS #####
 
 # Basic setup
@@ -15,7 +10,7 @@ Update-ExecutionPolicy Unrestricted
 Set-ExplorerOptions -showFileExtensions
 #Enable-RemoteDesktop
 Disable-InternetExplorerESC
-#Disable-UAC
+choco install sql-server-management-studio #Disable-UAC
 #Set-TaskbarSmall
 
 # disable defrag because I have an SSD
@@ -24,6 +19,7 @@ Get-ScheduledTask -TaskName *defrag* | Disable-ScheduledTask
 ################################# POWER SETTINGS #################################
 
 # Turn off hibernation
+
 # powercfg /H OFF
 
 # Change Power saving options (ac=plugged in dc=battery)
@@ -41,6 +37,9 @@ powercfg -change -hibernate-timeout-ac 0
 cinst googlechrome -y
 cinst firefox -y
 
+#Office
+choco install office365proplus -y
+
 #Other dev tools
 cinst fiddler4 -y
 cinst nodejs.install -y
@@ -53,6 +52,7 @@ choco install visualstudio2017-workload-azure -y
 choco install visualstudio2017-workload-manageddesktop -y
 choco install visualstudio2017-workload-netcoretools -y
 choco install visualstudio2017-workload-netweb -y
+choco install sql-server-management-studio -y
 
 choco install webpi -y
 choco install resharper-platform -y
@@ -73,7 +73,6 @@ choco install visualstudiocode -y
 choco install wireshark -y
 choco install slack -y
 choco install silverlight -y
-choco install windows-sdk-10.0 -y
 choco install filezilla -y
 choco install realvnc -y
 
