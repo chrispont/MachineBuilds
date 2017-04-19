@@ -14,7 +14,7 @@ choco install sql-server-management-studio #Disable-UAC
 #Set-TaskbarSmall
 
 # disable defrag because I have an SSD
-Get-ScheduledTask -TaskName *defrag* | Disable-ScheduledTask
+#Get-ScheduledTask -TaskName *defrag* | Disable-ScheduledTask
 
 ################################# POWER SETTINGS #################################
 
