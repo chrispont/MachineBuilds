@@ -10,26 +10,6 @@ Update-ExecutionPolicy Unrestricted
 Set-ExplorerOptions -showFileExtensions
 #Enable-RemoteDesktop
 Disable-InternetExplorerESC
-choco install sql-server-management-studio #Disable-UAC
-#Set-TaskbarSmall
-
-# disable defrag because I have an SSD
-#Get-ScheduledTask -TaskName *defrag* | Disable-ScheduledTask
-
-################################# POWER SETTINGS #################################
-
-# Turn off hibernation
-
-# powercfg /H OFF
-
-# Change Power saving options (ac=plugged in dc=battery)
-powercfg -change -monitor-timeout-ac 0
-powercfg -change -monitor-timeout-dc 15
-powercfg -change -standby-timeout-ac 0
-powercfg -change -standby-timeout-dc 30
-powercfg -change -disk-timeout-ac 0
-powercfg -change -disk-timeout-dc 30
-powercfg -change -hibernate-timeout-ac 0
 
 ################################# SOFTWARE #######################################
 
@@ -56,8 +36,6 @@ choco install sql-server-management-studio -y
 
 choco install webpi -y
 choco install resharper-platform -y
-choco install ilmerge -y
-choco install eazfuscator.net -y
 
 #Other essential tools
 cinst winrar -y
@@ -74,16 +52,12 @@ choco install wireshark -y
 choco install slack -y
 choco install silverlight -y
 choco install filezilla -y
-choco install realvnc -y
 
 cinst Microsoft-Hyper-V-All -source windowsFeatures
 cinst IIS-WebServerRole -source windowsfeatures
 cinst IIS-HttpCompressionDynamic -source windowsfeatures
 cinst IIS-ManagementScriptingTools -source windowsfeatures
 cinst IIS-WindowsAuthentication -source windowsfeatures
-
-Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
-Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe"
 
 # Update Windows and reboot if necessary
 Install-WindowsUpdate -AcceptEula -GetUpdatesFromMS
