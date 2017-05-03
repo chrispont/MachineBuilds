@@ -19,6 +19,7 @@ cinst firefox -y
 
 #Office
 choco install office365proplus -y
+choco install microsoft-teams -y
 
 #Other dev tools
 cinst fiddler4 -y
