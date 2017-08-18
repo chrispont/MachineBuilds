@@ -15,7 +15,6 @@ Disable-InternetExplorerESC
 
 #Browsers
 choco install googlechrome -y
-choco install firefox -y
 
 #Office
 choco install office365proplus -y
