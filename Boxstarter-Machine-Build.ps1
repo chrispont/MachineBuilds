@@ -14,16 +14,16 @@ Disable-InternetExplorerESC
 ################################# SOFTWARE #######################################
 
 #Browsers
-cinst googlechrome -y
-cinst firefox -y
+choco install googlechrome -y
+choco install firefox -y
 
 #Office
 choco install office365proplus -y
 choco install microsoft-teams -y
 
 #Other dev tools
-cinst fiddler4 -y
-cinst nodejs.install -y
+choco install fiddler4 -y
+choco install nodejs.install -y
 choco install gitextensions -y
 choco install kdiff3 -y
 choco install docker -y
@@ -39,12 +39,12 @@ choco install webpi -y
 choco install resharper-platform -y
 
 #Other essential tools
-cinst winrar -y
-cinst adobereader -y
-cinst skype -y
-cinst dropbox -y
-cinst windirstat -y
-cinst virtualbox -y
+choco install winrar -y
+choco install adobereader -y
+choco install skype -y
+choco install dropbox -y
+choco install windirstat -y
+choco install virtualbox -y
 choco install jdk8 -y
 choco install adobe-creative-cloud -y
 choco install keepass -y
@@ -54,11 +54,11 @@ choco install slack -y
 choco install silverlight -y
 choco install filezilla -y
 
-cinst Microsoft-Hyper-V-All -source windowsFeatures
-cinst IIS-WebServerRole -source windowsfeatures
-cinst IIS-HttpCompressionDynamic -source windowsfeatures
-cinst IIS-ManagementScriptingTools -source windowsfeatures
-cinst IIS-WindowsAuthentication -source windowsfeatures
+choco install Microsoft-Hyper-V-All -source windowsFeatures
+choco install IIS-WebServerRole -source windowsfeatures
+choco install IIS-HttpCompressionDynamic -source windowsfeatures
+choco install IIS-ManagementScriptingTools -source windowsfeatures
+choco install IIS-WindowsAuthentication -source windowsfeatures
 
 # Update Windows and reboot if necessary
 Install-WindowsUpdate -AcceptEula -GetUpdatesFromMS
