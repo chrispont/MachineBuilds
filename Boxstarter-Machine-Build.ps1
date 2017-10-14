@@ -30,7 +30,6 @@ choco install visualstudio2017-workload-azure -y
 choco install visualstudio2017-workload-manageddesktop -y
 choco install visualstudio2017-workload-netcoretools -y
 choco install visualstudio2017-workload-netweb -y
-choco install sql-server-management-studio -y
 
 choco install webpi -y
 choco install resharper-platform -y
