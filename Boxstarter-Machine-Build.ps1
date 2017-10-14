@@ -17,7 +17,6 @@ Disable-InternetExplorerESC
 choco install googlechrome -y
 
 #Office
-choco install office365proplus -y
 choco install microsoft-teams -y
 
 #Other dev tools
