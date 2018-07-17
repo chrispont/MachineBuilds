@@ -17,6 +17,7 @@ Disable-InternetExplorerESC
 choco install googlechrome -y
 
 #Office
+choco install office365proplus -y
 choco install microsoft-teams -y
 
 #Other dev tools
@@ -33,15 +34,15 @@ choco install visualstudio2017-workload-netweb -y
 
 choco install webpi -y
 choco install resharper-platform -y
+choco install sonos-controller -y
 
 #Other essential tools
 choco install jdk8 -y
-choco install keepass -y
 choco install visualstudiocode -y
-choco install wireshark -y
-choco install slack -y
 choco install silverlight -y
 choco install filezilla -y
+choco install docker-for-windows -y
+choco install rsat -y
 
 choco install IIS-WebServerRole -source windowsfeatures
 choco install IIS-HttpCompressionDynamic -source windowsfeatures
